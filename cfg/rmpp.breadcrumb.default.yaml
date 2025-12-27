@@ -4,10 +4,10 @@ layout:
     height: 27.4cm
 
     margin:
-      top: 0.7cm
-      bottom: 0.7cm
-      left: 0.5cm
-      right: 0.5cm
+      top: 1.25cm
+      bottom: 0.5cm
+      left: 0.25cm
+      right: 0.25cm
 
     reversemargins: true
     marginparwidth: .8cm
