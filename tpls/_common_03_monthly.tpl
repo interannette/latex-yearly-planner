@@ -3,7 +3,6 @@
 
 {{ if $.Cfg.Dotted -}}
 \myUnderline{Notes}
-\vbox to 0pt{\myMash[\myMonthlySpring]{20}{\myNumDotWidthFull}}
 {{- else -}}
 \parbox{\myLenTwoCol}{
   \myUnderline{Notes}
