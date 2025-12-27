@@ -1,0 +1,32 @@
+layout:
+  paper:
+    width: 19.6cm
+    height: 27.4cm
+
+    margin:
+      top: 0.7cm
+      bottom: 0.7cm
+      left: 0.5cm
+      right: 0.5cm
+
+    reversemargins: true
+    marginparwidth: .8cm
+    marginparsep: 3mm
+
+  numbers:
+    dotwidthfull: 38
+    dotwidthtwothirds: 25
+    quarterlylines: 50
+    weeklylines: 15
+    dailynotes: 48
+    dailybottomhour: 5
+    dailydiarygrateful: 10
+    dailydiarybest: 10
+    dailydiarylog: 25
+    dotheightfull: 48
+
+
+
+  lengths:
+    quarterlyspring: \textcolor{white}{.}
+    monthlycellheight: 100pt

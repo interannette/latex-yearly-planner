@@ -1,10 +1,10 @@
-\myUnderline{Things I'm grateful for}
+\myUnderline{Gratitude}
 \myMash{\myNumDailyDiaryGrateful}{\myNumDotWidthFull}
 \medskip
 
-\myUnderline{The best thing that happened today}
+\myUnderline{Self Validation}
 \myMash{\myNumDailyDiaryBest}{\myNumDotWidthFull}
 \medskip
 
-\myUnderline{Daily log}
+\myUnderline{Empowering Thoughts}
 \myMash{\myNumDailyDiaryLog}{\myNumDotWidthFull}

@@ -11,7 +11,9 @@ if file in glob(f"{TRANSLATION_FOLDER}*.json"):
     with open(file, "r") as f:
         translation = json.load(f)
 else:
-    raise ValueError("Requested translation is not currently supported.\nThe program will now exit.")
+    raise ValueError(
+        "Requested translation is not currently supported.\nThe program will now exit."
+    )
 
 
 if any(not word.isascii() for word in translation.values()):
@@ -21,8 +23,29 @@ else:
     font_edit = ""
 print(f"Translating pdf to {language}")
 
-MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+MONTHS = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+]
+WEEKDAYS = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+]
 WEEKDAYS_SHORT = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 WEEK = ["Week"]
 NOTES = ["Notes"]
@@ -35,6 +58,7 @@ MORE = ["More"]
 REFLECT = ["Reflect"]
 PHRASES = ["Things I'm grateful for", "The best thing that happened today", "Daily log"]
 
+
 def handle_all() -> None:
     handle_annual()
     handle_quarterly()
@@ -45,8 +69,14 @@ def handle_all() -> None:
     handle_daily_notes()
     handle_notes_indexed()
 
-def add_identifier(keys: list[str], func: Callable[[str], str] = lambda x: x, dictionary: dict[str, str] = translation) -> dict[str, str]:
+
+def add_identifier(
+    keys: list[str],
+    func: Callable[[str], str] = lambda x: x,
+    dictionary: dict[str, str] = translation,
+) -> dict[str, str]:
     return {func(key): func(dictionary.get(key)) for key in keys}
+
 
 def handle_annual() -> None:
     with open("out/annual.tex", "r") as file:
@@ -61,6 +91,7 @@ def handle_annual() -> None:
         file.write(font_edit)
         file.write(text)
 
+
 def handle_quarterly() -> None:
     with open("out/quarterly.tex", "r") as file:
         text = file.read()
@@ -73,6 +104,7 @@ def handle_quarterly() -> None:
     with open("out/quarterly.tex", "w") as file:
         file.write(font_edit)
         file.write(text)
+
 
 def handle_monthly() -> None:
     with open("out/monthly.tex", "r") as file:
@@ -89,6 +121,7 @@ def handle_monthly() -> None:
         file.write(font_edit)
         file.write(text)
 
+
 def handle_weekly() -> None:
     with open("out/weekly.tex", "r") as file:
         text = file.read()
@@ -103,6 +136,7 @@ def handle_weekly() -> None:
     with open("out/weekly.tex", "w") as file:
         file.write(font_edit)
         file.write(text)
+
 
 def handle_daily() -> None:
     with open("out/daily.tex", "r") as file:
@@ -125,6 +159,7 @@ def handle_daily() -> None:
         file.write(font_edit)
         file.write(text)
 
+
 def handle_daily_reflect() -> None:
     with open("out/daily_reflect.tex", "r") as file:
         text = file.read()
@@ -142,6 +177,7 @@ def handle_daily_reflect() -> None:
         file.write(font_edit)
         file.write(text)
 
+
 def handle_daily_notes() -> None:
     with open("out/daily_notes.tex", "r") as file:
         text = file.read()
@@ -158,6 +194,7 @@ def handle_daily_notes() -> None:
         file.write(font_edit)
         file.write(text)
 
+
 def handle_notes_indexed() -> None:
     with open("out/notes_indexed.tex", "r") as file:
         text = file.read()
@@ -170,5 +207,6 @@ def handle_notes_indexed() -> None:
     with open("out/notes_indexed.tex", "w") as file:
         file.write(font_edit)
         file.write(text)
+
 
 handle_all()
