@@ -18,8 +18,9 @@ layout:
     dotwidthtwothirds: 25
     quarterlylines: 50
     weeklylines: 15
-    dailynotes: 48
-    dailybottomhour: 5
+    dailynotes: 46
+    dailybottomhour: 6
+    dailytophour: 22
     dailydiarygrateful: 10
     dailydiarybest: 10
     dailydiarylog: 25
