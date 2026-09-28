@@ -4,6 +4,7 @@
 
 \newcommand{\myMinLineHeight}[1]{\parbox{0pt}{\vskip#1}}
 \newcommand{\myDummyQ}{\textcolor{white}{Q}}
+\newlength{\myLenScheduleTotal}
 
 {{- $numbers := .Cfg.Layout.Numbers -}}
 \newcommand{\myNumArrayStretch}{ {{- $numbers.ArrayStretch -}} }
@@ -11,6 +12,7 @@
 \newcommand{\myNumDotHeightFull}{ {{- $numbers.DotHeightFull -}} }
 \newcommand{\myNumDotWidthFull}{ {{- $numbers.DotWidthFull -}} }
 \newcommand{\myNumDotWidthTwoThirds}{ {{- $numbers.DotWidthTwoThirds -}} }
+\newcommand{\myNumDotWidthHalf}{ {{- $numbers.DotWidthHalf -}} }
 \newcommand{\myNumWeeklyLines}{ {{- $numbers.WeeklyLines -}} }
 \newcommand{\myNumDailyTodos}{ {{- $numbers.DailyTodos -}} }
 \newcommand{\myNumDailyNotes}{ {{- $numbers.DailyNotes -}} }

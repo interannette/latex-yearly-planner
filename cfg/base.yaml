@@ -23,8 +23,8 @@ layout:
     arraystretch: 1.5
     quarterlylines: 36
     weeklylines: 11
-    dailytodos: 8
-    dailynotes: 25
+    dailytodos: 12
+    dailynotes: 13
     dailypersonal: 6
     dailybottomhour: 7
     dailytophour: 23
@@ -38,6 +38,7 @@ layout:
     dotheightfull: 36
     dotwidthfull: 30
     dotwidthtwothirds: 20
+    dotwidthhalf: 15
 
   lengths:
     tabcolsep: 3.5pt

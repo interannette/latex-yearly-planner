@@ -89,6 +89,7 @@ type Numbers struct {
 	DotHeightFull       int
 	DotWidthFull        int
 	DotWidthTwoThirds   int
+	DotWidthHalf        int
 }
 
 type Paper struct {

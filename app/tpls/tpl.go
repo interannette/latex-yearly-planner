@@ -35,6 +35,14 @@ var tpl = template.Must(template.New("").Funcs(template.FuncMap{
 		return i - 1
 	},
 
+	"mul": func(a, b int) int {
+		return a * b
+	},
+
+	"add": func(a, b int) int {
+		return a + b
+	},
+
 	"is": func(i interface{}) bool {
 		if value, ok := i.(bool); ok {
 			return value
