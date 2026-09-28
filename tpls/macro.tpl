@@ -16,6 +16,7 @@
 \newcommand{\myNumWeeklyLines}{ {{- $numbers.WeeklyLines -}} }
 \newcommand{\myNumDailyTodos}{ {{- $numbers.DailyTodos -}} }
 \newcommand{\myNumDailyNotes}{ {{- $numbers.DailyNotes -}} }
+\newcommand{\myNumDailyMetrics}{ {{- $numbers.DailyMetrics -}} }
 \newcommand{\myNumDailyBottomHour}{ {{- $numbers.DailyBottomHour -}} }
 \newcommand{\myNumDailyTopHour}{ {{- $numbers.DailyTopHour -}} }
 \newcommand{\myNumDailyDiaryGoals}{ {{- $numbers.DailyDiaryGoals -}} }

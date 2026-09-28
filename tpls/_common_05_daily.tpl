@@ -12,6 +12,9 @@
 {{template "schedule.tpl" dict "Cfg" .Cfg "Day" .Body.Day}}
   \vspace{\dimexpr4mm+.3pt}
 
+  \myUnderline{Metrics}
+  \myMash[\myDailySpring]{\myNumDailyMetrics}{\myNumDotWidthHalf}
+
   Shutdown complete: $\square$
 
   \vspace{\dimexpr4mm+.3pt}

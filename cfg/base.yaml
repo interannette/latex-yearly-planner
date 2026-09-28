@@ -25,9 +25,10 @@ layout:
     weeklylines: 11
     dailytodos: 12
     dailynotes: 13
+    dailymetrics: 4
     dailypersonal: 6
     dailybottomhour: 7
-    dailytophour: 23
+    dailytophour: 21
     dailydiarygoals: 10
     dailydiarygrateful: 4
     dailydiarybest: 4
