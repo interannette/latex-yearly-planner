@@ -2,8 +2,10 @@
 {{- $rowUnits := mul (len $hours) 2 -}}
 {{- if .Cfg.AddLastHalfHour -}}{{- $rowUnits = add $rowUnits 1 -}}{{- end -}}
 \myUnderline{Schedule\textcolor{white}{g}}\vskip-\myLenLineThicknessDefault
+{{if .Divide -}}
 \setlength{\myLenScheduleTotal}{ {{- $rowUnits -}} \myLenLineHeightButLine}
 \smash{\makebox[0pt][l]{\hspace{.5\linewidth}\rule[-\myLenScheduleTotal]{\myLenLineThicknessDefault}{\myLenScheduleTotal}}}%
+{{end -}}
 {{range $hour := $hours -}}
 \myLineHeightButLine%
 {{if $.Cfg.AMPMTime -}}

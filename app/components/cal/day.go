@@ -47,6 +47,12 @@ func (d Day) ref(prefix ...string) string {
 	return p + d.Time.Format(time.RFC3339)
 }
 
+func (d Day) IsWeekend() bool {
+	wd := d.Time.Weekday()
+
+	return wd == time.Saturday || wd == time.Sunday
+}
+
 func (d Day) Add(days int) Day {
 	return Day{Time: d.Time.AddDate(0, 0, days)}
 }
